@@ -18,14 +18,20 @@ function getUsersById($id)
 
 function createUser($data)
 {
-    $users = getUsers();
-    $data['id'] = rand(1000000,2000000);
-    $users[] = $data;
-    putJson($users);
-    return $data;
-    
-
+    $users = getUsers(); // Obtém todos os usuários existentes
+    $newUser = [
+        'id' => rand(1000000, 2000000),
+        'name' => $data['name'],
+        'username' => $data['username'],
+        'email' => $data['email'],
+        'phone' => $data['phone'],
+        'website' => $data['website'],
+    ];
+    $users[] = $newUser; // Adiciona o novo usuário ao array de usuários
+    putJson($users); // Salva os usuários atualizados no arquivo JSON
+    return $newUser; // Retorna o novo usuário criado
 }
+
 
 function updateUser($data, $id)
 {
@@ -43,7 +49,6 @@ function updateUser($data, $id)
 function deleteUser($id)
 {
 }
-
 function uploadImage($file, $userId)
 {
     // Diretório de destino
@@ -73,12 +78,20 @@ function uploadImage($file, $userId)
         echo 'Arquivo carregado com sucesso.';
 
         // Atualiza a informação do usuário com a extensão do arquivo
-        $user['extension'] = $extension;
-        updateUser($user, $userId);
+        $users = getUsers(); // Obtém todos os usuários
+        foreach ($users as &$user) {
+            if ($user['id'] === $userId) {
+                $user['extension'] = $extension; // Atualiza a extensão da imagem do usuário
+                break;
+            }
+        }
+        putJson($users); // Salva os usuários atualizados no arquivo JSON
     } else {
         echo 'Erro ao mover o arquivo.';
     }
 }
+
+
 function putJson($users){
     file_put_contents(__DIR__ . '/users.json', json_encode($users, JSON_PRETTY_PRINT));
 }
