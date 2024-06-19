@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $user = createUser($_POST);
 
 if (isset($_FILES['imagem'])) {
-    uploadImage($_FILES['picture'], $user);
+    uploadImage($_FILES['imagem'], $user);
 }
 header("Location: index.php");
 }
