@@ -1,0 +1,92 @@
+[
+    {
+        "id": 4,
+        "name": "Luiza Lindberg 3",
+        "username": "luizalbd1234",
+        "email": "luizalb@email.com",
+        "phone": "49 9999-9999",
+        "website": "www.google.com",
+        "extension": "jpg"
+    },
+    {
+        "id": 5,
+        "name": "Chelsey Dietrich",
+        "username": "Kamren",
+        "email": "Lucio_Hettinger@annie.ca",
+        "phone": "(51) 99876-5432",
+        "website": "demarco.info",
+        "extension": "jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mrs. Dennis Schulist",
+        "username": "Leopoldo_Corkery",
+        "email": "Karley_Dach@jasper.info",
+        "phone": "(31) 91234-5678",
+        "website": "ola.org",
+        "extension": "jpg"
+    },
+    {
+        "id": 7,
+        "name": "Kurtis Weissnat",
+        "username": "Elwyn.Skiles",
+        "email": "Telly.Hoeger@billy.biz",
+        "phone": "(11) 98765-4321",
+        "website": "elvis.io",
+        "extension": "jpg"
+    },
+    {
+        "id": 8,
+        "name": "Nicholas Runolfsdottir V",
+        "username": "Maxime_Nienow",
+        "email": "Sherwood@rosamond.me",
+        "phone": "(21) 2345-6789",
+        "website": "jacynthe.com",
+        "extension": "jpg"
+    },
+    {
+        "id": 9,
+        "name": "Glenna Reichert",
+        "username": "Delphine",
+        "email": "Chaim_McDermott@dana.io",
+        "phone": "(71) 3456-7890",
+        "website": "conrad.com",
+        "extension": "jpg"
+    },
+    {
+        "id": 10,
+        "name": "Lucas jodiscleu de barros jr",
+        "username": "matanoobs123",
+        "email": "reydopagode@email.com",
+        "phone": "54 91666967",
+        "website": "www.registadeuofial.com",
+        "extension": "png"
+    },
+    {
+        "name": "Joao santos",
+        "username": "john22",
+        "email": "jsantos@gmail.com",
+        "phone": "(54) 99956-7890",
+        "website": "",
+        "id": 1879571,
+        "extension": "jpg"
+    },
+    {
+        "name": "Roberto da silva",
+        "username": "Robertinho1234",
+        "email": "robert231@gmail.com",
+        "phone": " 549999455552",
+        "website": "www.sitedoroberto.com.br",
+        "id": 1447535,
+        "extension": "png"
+    },
+    {
+        "name": "joe D",
+        "username": "joeD",
+        "email": "joeD@email.com",
+        "phone": "456456",
+        "website": "joe.com",
+        "id": 1253751,
+        "extension": "jpg"
+    }
+]
