@@ -33,8 +33,8 @@
                 <input name="website" value="<?php echo $user['website'] ?>" class="form-control">
             </div>
             <div class="form-group">
-                <label>Image</label>
-                <input name="imagem" type="file" class="form-control-file">
+                <label>Image</label >
+                <input name="imagem" type="file" class="form-control-file" required>
             </div>
             <button class="btn btn-sucess">Enviar</button>
             </form>

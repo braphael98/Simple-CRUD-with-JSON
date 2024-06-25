@@ -43,11 +43,21 @@ function updateUser($data, $id)
                 $users[$i] = $updateUser = array_merge($user, $data);
         }
     }
-   putJson($users);
+    putJson($users);
     return $updateUser;
 }
 function deleteUser($id)
 {
+    $users = getUsers();
+
+    foreach ($users as $i => $user) {
+        if ($user['id'] == $id) {
+            array_splice($users, $i, 1);
+            break; // Adicionado para sair do loop após deletar o usuário
+        }
+    }
+
+    putJson($users);
 }
 function uploadImage($file, $userId)
 {
@@ -92,6 +102,7 @@ function uploadImage($file, $userId)
 }
 
 
-function putJson($users){
+function putJson($users)
+{
     file_put_contents(__DIR__ . '/users.json', json_encode($users, JSON_PRETTY_PRINT));
 }
